@@ -1,0 +1,20 @@
+\ LEARNING HOW TO CREATE A SMALL MESSAGEBOX 
+
+WINAPI: MessageBoxA USER32.DLL
+  
+: MSG     { Z }  ( use Msg " 1233332" ) 
+       34 WORD TO Z   
+       0  ( OPTIONS 0 =0K , 1= OK-CANCEL, 2 CANCEL REP.IGNORE, 3 YES NOT CANCEL)
+       S" MESSAGE" DROP  Z  0  MessageBoxA  ;
+  
+  
+\ ****** HOW TO USE YOUR NEW WORD  *****   
+   
+   MSG "  1234567890 "
+    
+ 
+\EOF 
+
+\  ****  LOOK AT THE OPTIONS YOU HAVE IN THE MSG
+
+\  0  ( OPTIONS 0 =0K , 1= OK-CANCEL, 2 CANCEL REP.IGNORE, 3 YES NOT CANCEL)
