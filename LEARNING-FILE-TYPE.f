@@ -131,7 +131,7 @@ OpenDialog :new VALUE tt
 ;
 
 
-: TTEST-FILE  ( --)   \ SEND A FILE OVER SERIAL
+: RUN-TEST   ( --)   \  Open a file dialog, choose a file, and see it printed/"typed" on your screen
 fTest tt :setFilter
 title1 tt :setTitle
 tt :execute DROP
