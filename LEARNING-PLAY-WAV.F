@@ -28,3 +28,15 @@ CASE-INS OFF
 : stop-wave W: SND_APPLICATION 0 0 PlaySound DROP ;
 
 : TEST-WAV  S" SYSTEMEXIT" play-system-event-sound  ; 
+
+\EOF  more sound examples.... 
+: TT  play-system-event-sound  ; 
+ S" SystemAsterisk" TT
+ 1000 PAUSE
+ S" SystemExclamation" TT
+ 1000 PAUSE 
+ S" SystemHand" T
+ 1000 PAUSE
+ S" SystemStart" T
+ 
+ \ READ MICROSOFT DOC  PlaySound function
