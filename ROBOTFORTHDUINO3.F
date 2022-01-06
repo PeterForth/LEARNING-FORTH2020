@@ -1,4 +1,6 @@
  \ ---- VERY SIMPLE ROBOT PROGRAM : ROBOT FORTH ----
+ \ watch the video on YOUTUBE  https://youtu.be/YkABQCJw_MY?sub_confirmation=1
+ 
 VARIABLE VEL 30 VEL ! \ servo speed I am going sloooow
 : 20V VEL @ ;
 
